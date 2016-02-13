@@ -1,0 +1,25 @@
+README
+------
+App Name: What's That Chord
+Description: The game is supposed to help the user learn guitar chords.
+In the Master View, when the app starts, there will be a list of chords to
+select from. Then in the detail view, there will be 6 blocks where each
+block contains an image that shows the finger positions for that chord. If the
+user selects the correct corresponding block for the chord that they chose, then
+the user will get 100 points added to their total correct for the app instance.
+If incorrectly chosen, the user will get 0 points. Scores will accumulate until
+the reset button in Detail View is pressed.
+
+DEVELOPMENT LOG
+---------------
+11/14/15
+- Issue where the detail view is initially presented and not the master view.
+- Programmatically setting up collectionView to avoid lack of storyboard
+implementations that are equivalent to UICollectionViewFlowLayout.
+
+Reference
+http://www.guitarnoise.com/chords/
+http://www.scott-sherwood.com/tutorial/ios-6-uicollectionviewcontroller/
+
+UICollectionView relies on its dataSource to tell it how many cells to display
+and to configure each individual cell before it is presented to the user.
